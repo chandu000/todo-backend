@@ -32,3 +32,15 @@ This is the backend for the To-Do List application, built using Django. The back
    ```bash
    git clone https://github.com/yourusername/todo-backend.git
    cd todo-backend
+2. **Apply the migrations**:
+   ```bash
+   python manage.py migrate
+3. **Start the development server**:
+   ```bash
+   python manage.py runserver
+## API Endpoints
+- **GET /api/todos/**: Retrieve a list of all to-do items.
+- **POST /api/add/**: Add a new to-do item.
+- **DELETE /api/delete/<id>/**: Delete a specific to-do item by its id.
+- **PUT /api/update/<id>/**: Update a specific to-do item by its id, such as editing the title or marking it as completed.
+   
